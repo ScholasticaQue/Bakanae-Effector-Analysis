@@ -10,3 +10,16 @@ A multi-stage bioinformatics pipeline was developed and implemented to identify 
 3. Functional Annotation: Cross-referencing against PHI-base and PFAM databases.
 
 4. Comparative Genomics: Clustered presence/absence analysis across 13 global isolates.
+
+# Repository Contents
+
+bash/pipeline_v1.sh: Automated secretome filtering scripts.
+
+
+R/visualization_plots.R: Scripts used to generate Cysteine distribution histograms and PHI-base Venn diagrams.
+
+
+data/metadata_isolates.csv: Geographical origins and isolate IDs for the 13 samples.
+
+
+results/virulence_summary.csv: Final prioritized list of 34 high-virulence rice bakanae effectors.
