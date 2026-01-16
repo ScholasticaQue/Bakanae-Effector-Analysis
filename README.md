@@ -3,13 +3,13 @@ A comparative genomics and phylogeographic pipeline for rice bakanae disease. Fe
 
 ## Computational Pipeline
 A multi-stage bioinformatics pipeline was developed and implemented to identify high-confidence effectors.
-1. Secretome Prediction: Protein filtering using SignalP, TargetP, and DeepTMHMM.
+**1. Secretome Prediction:** Protein filtering using SignalP, TargetP, and DeepTMHMM.
 
-2. Effector Identification: Using EffectorP 3.0 and physical property filters (>=4 cysteines, length 50-300aa)
+**2. Effector Identification:** Using EffectorP 3.0 and physical property filters (>=4 cysteines, length 50-300aa)
 
-3. Functional Annotation: Cross-referencing against PHI-base and PFAM databases.
+**3. Functional Annotation:** Cross-referencing against PHI-base and PFAM databases.
 
-4. Comparative Genomics: Clustered presence/absence analysis across 13 global isolates.
+**4. Comparative Genomics:** Clustered presence/absence analysis across 13 global isolates.
 
 ## Evolutionary & Spatial Diffusion Analysis
 
