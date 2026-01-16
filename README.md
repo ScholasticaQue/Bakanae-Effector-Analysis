@@ -11,15 +11,45 @@ A multi-stage bioinformatics pipeline was developed and implemented to identify 
 
 4. Comparative Genomics: Clustered presence/absence analysis across 13 global isolates.
 
-## Repository Contents
+## Evolutionary & Spatial Diffusion Analysis
 
-bash/pipeline_v1.sh: Automated secretome filtering scripts.
+To investigate the global movement and evolutionary history of *Fusarium fujikuroi*, a phylogeographic reconstruction framework was implemented as outlined below.
 
+### 1. Pangenome Clustering
+Protein-coding sequences (translated CDS) from all 13 *F. fujikuroi* isolates were clustered into orthologous groups using **OrthoFinder**.  
+This step enabled the identification of shared and accessory gene content across isolates.
 
-R/visualization_plots.R: Scripts used to generate Cysteine distribution histograms and PHI-base Venn diagrams.
+- Input: Translated CDS FASTA files  
+- Tool: OrthoFinder  
+- Output: Orthogroups and inferred gene families
 
+### 2. Core Genome Alignment
+Orthogroups present in all isolates were defined as the **core genome**.  
+These conserved genes were extracted and concatenated to construct a high-confidence alignment representing the evolutionary backbone of the species.
 
-data/metadata_isolates.csv: Geographical origins and isolate IDs for the 13 samples.
+- Criteria: Single-copy orthologs present in all 13 isolates  
+- Output: Concatenated core genome alignment
 
+### 3. Bayesian Diffusion Modeling
+A Bayesian phylogeographic analysis was conducted using **BEAST2** to reconstruct spatial and temporal diffusion dynamics.
 
-results/virulence_summary.csv: Final prioritized list of 34 high-virulence rice bakanae effectors.
+- Input:
+  - Core genome alignment
+  - Sampling dates (temporal data)
+  - Geographic origin metadata (10 countries)
+- Model:
+  - Discrete trait diffusion model
+  - Bayesian MCMC framework
+- Output:
+  - Time-calibrated phylogeny
+  - Ancestral location state reconstructions
+  - BEAST log and tree files
+
+### 4. Pathogen Connectivity Visualization
+To visualize inferred migration patterns, **diffusion events** between geographical regions were extracted from BEAST log files.  
+A **Chord Diagram** was generated to represent the intensity and directionality of transitions between countries.
+
+- Input: BEAST diffusion logs
+- Visualization: Chord diagram
+- Interpretation: Strength and frequency of pathogen movement between regions
+
