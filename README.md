@@ -12,7 +12,7 @@ A multi-stage bioinformatics pipeline was developed and implemented to identify 
 
 **4. Comparative Genomics:** Clustered presence/absence analysis across 13 global isolates.
 
-## Evolutionary & Spatial Diffusion Analysis
+## Evolutionary & Phylogeographic Diffusion Modeling
 
 To investigate the global movement and evolutionary history of *Fusarium fujikuroi*, a phylogeographic reconstruction framework was implemented as outlined below.
 
