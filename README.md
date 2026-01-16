@@ -57,26 +57,6 @@ A **Chord Diagram** was generated to represent the intensity and directionality 
 ## Repository Structure
 The project is organized into modular directories corresponding to each major analytical step.
 
-```text
-scripts/
-├── secretome/
-│   ├── SignalP/                 # Signal peptide prediction
-│   ├── TargetP/                 # Subcellular localization prediction
-│   └── cysteine_filtering/      # Cysteine-rich protein filtering scripts
-│
-├── pangenome/
-│   ├── orthofinder/             # OrthoFinder execution and post-processing scripts
-│   └── core_genome/             # Core genome identification and extraction
-│
-├── beast/
-│   ├── xml/                     # BEAST2 XML configuration files
-│   ├── logs/                    # BEAST log and tree outputs
-│   └── log_processing/          # Scripts for parsing diffusion and transition events
-│
-├── viz/
-│   ├── chord_diagram/           # R scripts for phylogeographic chord diagrams
-│   └── heatmap/                 # Presence/absence heatmap visualization (R)
-│
-└── utils/                       # Helper scripts and shared functions
-
-
+```
+/scripts/secretome/
+```
