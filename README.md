@@ -57,6 +57,8 @@ A **Chord Diagram** was generated to represent the intensity and directionality 
 ## Repository Structure
 The project is organized into modular directories corresponding to each major analytical step.
 
-```
-/scripts/secretome/
-```
+- `/scripts/secretome/` (SignalP, TargetP, cysteine filtering)
+- `/scripts/pangenome/` (OrthoFinder scripts and core genome extraction)
+- `/scripts/beast/` (BEAST2 XML configuration and log processing)
+- `/scripts/viz/` (R code for the **Chord Diagram** and **Presence/Absence Heatmap**)
+
