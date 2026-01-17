@@ -1,3 +1,13 @@
+"""
+Pathogen Effector Annotation: Pfam Domain Search Generator
+Author: [Your Name]
+Institution: Africa Rice Center
+
+Description:
+This script automates the generation of a high-throughput HMMER search 
+against the Pfam-A database for candidate effector proteins identified 
+in 13 global Fusarium fujikuroi isolates.
+"""
 from pathlib import Path
 
 # ----------- CONFIGURATION -----------
