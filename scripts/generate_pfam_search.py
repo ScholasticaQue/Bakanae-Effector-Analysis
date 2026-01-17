@@ -1,6 +1,6 @@
 """
 Pathogen Effector Annotation: Pfam Domain Search Generator
-Author: [Your Name]
+Author: Scholastica Quaicoe
 Institution: Africa Rice Center
 
 Description:
