@@ -11,10 +11,9 @@ filtering pipeline.
 import subprocess
 from pathlib import Path
 
-# Paths - adjust as needed
-SIGNALP_DIR = Path("/Fusarium_fujikuroi_analysis/signalp6_fast/signalp-6-package")
-INPUT_DIR = Path("/Fusarium_fujikuroi_analysis/processed_data/proteins")
-OUTPUT_DIR = SIGNALP_DIR / "signalp_results"
+# ----------- CONFIGURATION (Relative Paths) -----------
+INPUT_DIR = Path("data/raw_proteins")  # Expected structure: Country_*/Isolate_*/*.faa
+OUTPUT_DIR = Path("results/signalp_outputs")
 
 # Make sure output directory exists
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
