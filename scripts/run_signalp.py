@@ -1,3 +1,13 @@
+"""
+Pathogen Effector Analysis: SignalP 6.0 Batch Processor
+Author: Scholastica Quaicoe
+Institution: Africa Rice Center
+
+Description:
+Automates the prediction of signal peptides across 13 global Fusarium fujikuroi 
+isolates using SignalP 6.0 in 'fast' mode. This is Step 1 of the secretome 
+filtering pipeline.
+"""
 import subprocess
 from pathlib import Path
 
