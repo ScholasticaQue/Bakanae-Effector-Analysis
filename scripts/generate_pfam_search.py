@@ -1,1 +1,30 @@
+from pathlib import Path
 
+# ----------- CONFIGURATION -----------
+pfam_db = Path("/mnt/c/Users/schol/OneDrive/Desktop/Fusarium_fujikuroi_analysis/signalp6_fast/signalp-6-package/Pfam-A.hmm")
+input_dir = Path("/mnt/c/Users/schol/OneDrive/Desktop/Fusarium_fujikuroi_analysis/signalp6_fast/signalp-6-package/pipeline_results/cysteine_final_candidates_filtered")
+output_dir = input_dir / "pfam_annotations"
+output_dir.mkdir(parents=True, exist_ok=True)
+
+# ----------- BUILD COMMANDS -----------
+commands = []
+
+# Search for all candidate FASTA files
+faa_files = list(input_dir.glob("*_filtered_candidates.faa"))
+
+for faa_file in faa_files:
+    sample = faa_file.stem.replace("_filtered_candidates", "")
+    domtblout = output_dir / f"{sample}_pfam.domtblout"
+    rawout = output_dir / f"{sample}_pfam_full.txt"
+    
+    cmd = f"hmmsearch --domtblout {domtblout} {pfam_db} {faa_file} > {rawout}"
+    commands.append(cmd)
+
+# ----------- WRITE BASH SCRIPT -----------
+bash_script_path = output_dir / "run_all_pfam.sh"
+with open(bash_script_path, "w") as f:
+    f.write("#!/bin/bash\n\n")
+    for cmd in commands:
+        f.write(cmd + "\n")
+
+print(f" Bash script written: {bash_script_path}")
