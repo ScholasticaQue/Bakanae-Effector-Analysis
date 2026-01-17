@@ -10,9 +10,10 @@ in 13 global Fusarium fujikuroi isolates.
 """
 from pathlib import Path
 
-# ----------- CONFIGURATION -----------
-pfam_db = Path("/mnt/c/Users/schol/OneDrive/Desktop/Fusarium_fujikuroi_analysis/signalp6_fast/signalp-6-package/Pfam-A.hmm")
-input_dir = Path("/mnt/c/Users/schol/OneDrive/Desktop/Fusarium_fujikuroi_analysis/signalp6_fast/signalp-6-package/pipeline_results/cysteine_final_candidates_filtered")
+# ----------- CONFIGURATION (Relative Paths for Portability) -----------
+# Ensure the Pfam-A.hmm file and input directory are correctly mapped
+pfam_db = Path("databases/Pfam-A.hmm")
+input_dir = Path("results/effector_candidates")
 output_dir = input_dir / "pfam_annotations"
 output_dir.mkdir(parents=True, exist_ok=True)
 
