@@ -48,18 +48,18 @@ def get_targetp_passers(isolate):
     return passers
 
 def get_deeptmhmm_passers(isolate):
-    """Path: deeptmhmm_final/{isolate}/{isolate}_merged.3line"""
+    """Criteria: Header contains 'GLOB' (Globular/No TM helices)"""
     passers = set()
     file_path = DEEPTMHMM_DIR / isolate / f"{isolate}_merged.3line"
     if file_path.exists():
         with open(file_path, 'r') as f:
-            lines = f.readlines()
-            # 3-line format: ID, Seq, Topology info
-            for i in range(0, len(lines), 3):
-                if i+2 < len(lines):
-                    protein_id = lines[i].strip().replace(">", "").split()[0]
-                    topology = lines[i+2].strip()
-                    if "TM=0" in topology:
+            for line in f:
+                # We only need to check the header lines
+                if line.startswith(">"):
+                    # Example line: >5B_000001 | GLOB
+                    if "GLOB" in line:
+                        # Extract the ID before the first space
+                        protein_id = line.replace(">", "").split()[0]
                         passers.add(protein_id)
     return passers
 
