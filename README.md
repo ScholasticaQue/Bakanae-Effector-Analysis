@@ -65,8 +65,8 @@ The goal was to identify signatures of host-adaptation and positive selection wi
 **3. Phylogeny:** Maximum Likelihood trees were generated for each cluster using FastTree (GTR model).
 
 **4. Selection Testing:** Evolutionary rates were calculated using PAML (CodeML), comparing:
-- M0 (One-ratio): To determine the global $\omega$ per cluster.
-- M7 vs M8 (Site models): To detect specific amino acids under positive selection.
+- **M0 (One-ratio):** To determine the global $\omega$ per cluster.
+- **M7 vs M8 (Site models):** To detect specific amino acids under positive selection.
 
 ## Repository Structure
 The project is organized into modular directories corresponding to each major analytical step.
