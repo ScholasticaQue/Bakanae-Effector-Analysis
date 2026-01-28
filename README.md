@@ -54,7 +54,7 @@ A **Chord Diagram** was generated to represent the intensity and directionality 
 - Visualization: Chord diagram
 - Interpretation: Strength and frequency of pathogen movement between regions
 
-### 5. Evolutionary Analysis
+## Evolutionary and Selection Pressure Analysis
 Evolutionary pressure ($dN/dS$) was analyzed across predicted effector proteins in the 13 isolates of Fusarium fujikuroi. 
 The goal was to identify signatures of host-adaptation and positive selection within the fungal secretome. By comparing the rates of non-synonymous ($dN$) and synonymous ($dS$) mutations, we characterized the selective forces acting on fungal "weapons" (effectors) used during plant infection.
 
