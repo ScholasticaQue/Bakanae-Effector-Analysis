@@ -58,13 +58,13 @@ A **Chord Diagram** was generated to represent the intensity and directionality 
 Evolutionary pressure ($dN/dS$) was analyzed across predicted effector proteins in the 13 Fusarium fujikuroi isolates. 
 The goal was to identify signatures of host-adaptation and positive selection within the fungal secretome. By comparing the rates of non-synonymous ($dN$) and synonymous ($dS$) mutations, we characterized the selective forces acting on fungal "weapons" (effectors) used during plant infection.
 
-**Clustering:** Homologous sequences were grouped using **CD-HIT** (90% identity threshold) to define effector "clusters" across isolates.
+**1. Clustering:** Homologous sequences were grouped using **CD-HIT** (90% identity threshold) to define effector "clusters" across isolates.
 
-**Codon-Aware Alignment:** Nucleotide sequences (CDS) were aligned using **MAFFT** and **PAL2NAL**, ensuring the preservation of the triplet codon reading frame.
+**2. Codon-Aware Alignment:** Nucleotide sequences (CDS) were aligned using **MAFFT** and **PAL2NAL**, ensuring the preservation of the triplet codon reading frame.
 
-**Phylogeny:** Maximum Likelihood trees were generated for each cluster using FastTree (GTR model).
+**3. Phylogeny:** Maximum Likelihood trees were generated for each cluster using FastTree (GTR model).
 
-**Selection Testing:** Evolutionary rates were calculated using PAML (CodeML), comparing:
+**4. Selection Testing:** Evolutionary rates were calculated using PAML (CodeML), comparing:
 - M0 (One-ratio): To determine the global $\omega$ per cluster.
 - M7 vs M8 (Site models): To detect specific amino acids under positive selection.
 
