@@ -52,13 +52,13 @@ for cluster_id, member_ids in clusters.items():
             if mid in seq_records:
                 cluster_records.append(seq_records[mid])
             else:
-                print(f"⚠️ Warning: {mid} not found in FASTA!")
+                print(f"Warning: {mid} not found in FASTA!")
 
         if cluster_records:
             SeqIO.write(cluster_records, output_file, "fasta")
             extracted_count += 1
 
 print("-" * 30)
-print(f"✅ Success! Extracted {extracted_count} mixed clusters to:")
-print(f"📍 {output_dir}")
+print(f"Success! Extracted {extracted_count} mixed clusters to:")
+print(f" {output_dir}")
 
