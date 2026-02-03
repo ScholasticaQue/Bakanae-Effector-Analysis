@@ -68,6 +68,65 @@ The goal was to identify signatures of host-adaptation and positive selection wi
 - **M0 (One-ratio):** To determine the global $\omega$ per cluster.
 - **M7 vs M8 (Site models):** To detect specific amino acids under positive selection.
 
+## Significant Results Summary
+
+This repository highlights the unique evolutionary and pathogenic adaptation strategy of the **Kenyan lineage of *Fusarium fujikuroi***.
+
+---
+
+### 🇰🇪 The Kenyan Effector Expansion
+
+#### Isolate Redundancy
+- A **25× expansion** of classical **SCRP (Small Cysteine-Rich Protein) effectors** was identified in Kenyan isolates **5B** and **5C** compared to global isolates.
+- This suggests a lineage-specific adaptation strategy potentially enhancing host interaction and virulence potential.
+
+#### Paralog Discovery
+- **CD-HIT clustering (90% sequence identity)** reduced:
+  - **1,377 raw effector hits → 288 unique effector clusters**
+- Results indicate that the observed expansion is primarily driven by:
+  - High paralog redundancy  
+  - Local gene duplication events  
+
+#### The "Borrowed Arsenal"
+- Several effector clusters (**Cluster 102, 100, 104**) show strong homology to effectors found in:
+  - *Fusarium equiseti*
+  - *Fusarium oxysporum*
+- These findings suggest possible:
+  - Horizontal gene transfer
+  - Shared ancestral effector repertoires
+  - Adaptive gene acquisition
+
+---
+
+### Structural Homology Alignment
+
+#### Stable Evolutionary Hub — Scaffold 10
+- Enriched in **But2 domain proteins**
+- Functional relevance:
+  - Protein turnover
+  - Cellular homeostasis
+  - Potential regulatory stability within the genome
+
+#### Plastic Adaptive Hub — Scaffold 7
+- Enriched in **Hydrophobin proteins**
+- Functional relevance:
+  - Spore dispersal and environmental survival
+  - Surface interaction and host colonization
+  - Rapid environmental adaptability
+
+---
+
+### Biological Interpretation
+
+Together, these results suggest that the Kenyan lineage combines:
+
+- **Effector gene amplification**
+- **Cross-species effector acquisition**
+- **Genome compartmentalization into stable and adaptive hubs**
+
+This dual evolutionary strategy may contribute to enhanced pathogenic success and ecological flexibility.
+
+
 ## Repository Structure
 The project is organized into modular directories corresponding to each major analytical step.
 
