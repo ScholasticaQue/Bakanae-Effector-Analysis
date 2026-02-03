@@ -14,10 +14,12 @@ import subprocess
 from pathlib import Path
 
 # Paths
-work_dir = Path("/mnt/e/Fusarium_fujikuroi_analysis/cds_data/protein_input/effectorp_results/dnds_cds_groups/aligned_results")
+# Aligned codon sequences and phylogenetic trees should be in this directory
+WORK_DIR = Path("analysis/evolutionary_selection/alignments")
 os.chdir(work_dir)
 
 def create_ctl(name, aln_file, tree_file):
+    """Generates the .ctl configuration file required for PAML Codeml."""
     ctl_content = f"""
       seqfile = {aln_file}
       treefile = {tree_file}
