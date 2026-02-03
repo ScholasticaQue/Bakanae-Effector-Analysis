@@ -1,3 +1,14 @@
+"""
+Pathogen Effector Analysis: Genomic Distribution Visualization
+Author: [Your Nam
+Institution: Africa Rice Center
+
+Description:
+This script identifies and compares the genomic localization of classical 
+Small Cysteine-Rich Proteins (SCRPs) between the Kenyan isolates 5B and 5C. 
+It parses GFF3 files and cross-references them with the refined secretome 
+to demonstrate conserved expansion across specific scaffolds.
+"""
 import pandas as pd
 from Bio import SeqIO
 from pathlib import Path
