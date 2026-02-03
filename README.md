@@ -68,6 +68,38 @@ The goal was to identify signatures of host-adaptation and positive selection wi
 - **M0 (One-ratio):** To determine the global $\omega$ per cluster.
 - **M7 vs M8 (Site models):** To detect specific amino acids under positive selection.
 
+### Functional Prioritization
+
+To refine candidate effector targets and predict their biological relevance in host infection, structural bioinformatics approaches were applied.
+
+#### Structural Validation
+- Predicted three-dimensional protein structures using **AlphaFold3** to obtain high-confidence structural models of prioritized effector candidates.
+- Structural predictions enabled:
+  - Identification of conserved functional folds
+  - Detection of structural motifs not apparent from sequence analysis alone
+  - Improved confidence in effector annotation
+
+#### Structural Homology Screening
+- Conducted structural similarity searches using **FoldSeek** to compare predicted effector structures against known protein databases.
+- This analysis facilitated:
+  - Identification of potential functional analogs
+  - Discovery of conserved virulence-associated structural domains
+  - Detection of distant evolutionary relationships beyond sequence similarity
+
+#### Host Target Inference
+- Combined structural predictions and homology results to prioritize effectors likely to interact with **rice host biological pathways**.
+- This approach supports:
+  - Identification of candidate host manipulation strategies
+  - Selection of high-value targets for downstream functional validation
+  - Improved understanding of pathogen–host molecular interactions
+
+---
+
+### Biological Significance
+
+Structural prioritization provides a higher-resolution framework for identifying candidate virulence factors and helps bridge genomic discovery with functional pathogenicity mechanisms.
+
+
 ## Significant Results Summary
 
 This repository highlights the unique evolutionary and pathogenic adaptation strategy of the **Kenyan lineage of *Fusarium fujikuroi***.
