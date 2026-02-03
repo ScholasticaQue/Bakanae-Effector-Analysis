@@ -1,3 +1,14 @@
+"""
+Pathogen Effector Analysis: Evolutionary Selection Pressure (dN/dS)
+Author: Scholastica Quaicoe
+Institution: Africa Rice Center
+
+Description:
+This script automates PAML/CodeML analysis for predicted effector clusters.
+It compares site models M7 (null) vs M8 (selection) to identify specific 
+amino acids under positive selection (ω > 1). This is critical for 
+identifying signatures of host-adaptation in global isolates.
+"""
 import os
 import subprocess
 from pathlib import Path
