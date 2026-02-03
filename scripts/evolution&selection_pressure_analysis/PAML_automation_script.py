@@ -41,7 +41,7 @@ def create_ctl(name, aln_file, tree_file):
     with open(f"{name}.ctl", "w") as f:
         f.write(ctl_content)
 
-print("🧬 Starting dN/dS Analysis...")
+print(" Starting dN/dS Analysis...")
 
 for aln in work_dir.glob("*.codon.aln"):
     # Fix: Correctly extract just 'Cluster_XX' by removing '.codon.aln'
