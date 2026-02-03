@@ -1,6 +1,6 @@
 """
 Pathogen Effector Analysis: Genomic Distribution Visualization
-Author: [Your Nam
+Author: Scholastica Quaicoe
 Institution: Africa Rice Center
 
 Description:
