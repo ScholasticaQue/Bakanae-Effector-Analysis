@@ -23,6 +23,7 @@ GFF_FILES = {
     "5C": Path("data/genomes/Fusarium_fujikuroi_5C.gff3")
 }
 def get_effector_distribution(isolate, gff_path):
+    """Maps effector IDs to their corresponding genomic scaffolds using GFF3."""
     target_ids = set()
     for record in SeqIO.parse(effector_fasta, "fasta"):
         if record.id.startswith(isolate):
