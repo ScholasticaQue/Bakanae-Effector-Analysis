@@ -14,14 +14,14 @@ from Bio import SeqIO
 from pathlib import Path
 import matplotlib.pyplot as plt
 
-# --- CONFIGURATION ---
-effector_fasta = "/mnt/e/Fusarium_fujikuroi_analysis/cds_data/protein_input/effectorp_results/refined_classical_effectors.fasta"
+# --- CONFIGURATION (Relative Paths for Reproducibility) ---
+# Ensure these files are placed in the 'data/' or 'results/' directories
+EFFECTOR_FASTA = Path("results/refined_classical_effectors.fasta")
 
-gff_files = {
-    "5B": "/mnt/e/Fusarium_fujikuroi_analysis/Genome_data/Fusarium_fujikuroi_5B.gff3",
-    "5C": "/mnt/e/Fusarium_fujikuroi_analysis/Genome_data/Fusarium_fujikuroi_5C.gff3"
+GFF_FILES = {
+    "5B": Path("data/genomes/Fusarium_fujikuroi_5B.gff3"),
+    "5C": Path("data/genomes/Fusarium_fujikuroi_5C.gff3")
 }
-
 def get_effector_distribution(isolate, gff_path):
     target_ids = set()
     for record in SeqIO.parse(effector_fasta, "fasta"):
