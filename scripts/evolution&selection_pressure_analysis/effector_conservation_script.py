@@ -16,10 +16,11 @@ from pathlib import Path
 import re
 
 # --- CONFIGURATION ---
-results_dir = Path("/mnt/e/Fusarium_fujikuroi_analysis/cds_data/protein_input/effectorp_results")
-clstr_file = results_dir / "effectors_clustered.clstr"
-matrix_output = results_dir / "clustered_effector_matrix.csv"
-heatmap_output = results_dir / "clustered_effector_heatmap.png"
+# --- CONFIGURATION (Relative Paths) ---
+DATA_DIR = Path("results/clustering")
+CLSTR_FILE = DATA_DIR / "effectors_clustered.clstr"
+OUTPUT_DIR = Path("results/figures")
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 ISOLATES = ["5B", "5C", "B20", "C1995", "CFF1", "CFF2", "E282", "FSU48", 
             "IMI58289", "KSU3368", "M567", "MRC2276", "NCIM1100"]
