@@ -1,6 +1,6 @@
 """
 Pathogen Effector Analysis: Presence/Absence Heatmap Generation
-Author: [Your Name]
+Author: Scholastica Quaicoe
 Institution: Africa Rice Center
 
 Description:
