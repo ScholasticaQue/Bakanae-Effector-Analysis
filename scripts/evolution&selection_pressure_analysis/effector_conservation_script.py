@@ -29,19 +29,19 @@ def parse_cdhit_clusters(filepath):
     """Parses CD-HIT .clstr file to map isolates to clusters."""
     clusters = {}
     current_cluster = None
-
-with open(clstr_file, 'r') as f:
-    for line in f:
-        if line.startswith(">Cluster"):
-            current_cluster = line.strip().replace(">", "")
-            clusters[current_cluster] = set()
-        else:
-            # Extract isolate name from the tagged ID (e.g., 5B|5B_000012)
-            match = re.search(r'>(\w+)\|', line)
-            if match:
-                isolate = match.group(1)
-                clusters[current_cluster].add(isolate)
-
+    
+    with open(filepath, 'r') as f:
+        for line in f:
+            if line.startswith(">Cluster"):
+                current_cluster = line.strip().replace(">", "")
+                clusters[current_cluster] = set()
+            else:
+                # Regex to extract isolate name from tagged ID (e.g., 5B|IsolateID)
+                match = re.search(r'>(\w+)\|', line)
+                if match:
+                    isolate = match.group(1)
+                    clusters[current_cluster].add(isolate)
+    return clusters
 # 2. Create the Presence/Absence Matrix
 matrix_data = []
 for cluster, isolate_set in clusters.items():
