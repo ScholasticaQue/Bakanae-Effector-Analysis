@@ -1,3 +1,14 @@
+"""
+Pathogen Effector Analysis: Presence/Absence Heatmap Generation
+Author: [Your Name]
+Institution: Africa Rice Center
+
+Description:
+This script parses CD-HIT clustering results to visualize the conservation 
+of effector families across 13 global F. fujikuroi isolates. It categorizes 
+clusters into 'Core', 'Accessory', and 'Unique' suites to highlight 
+regional effector expansions.
+"""
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
