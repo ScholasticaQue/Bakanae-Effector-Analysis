@@ -25,9 +25,10 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 ISOLATES = ["5B", "5C", "B20", "C1995", "CFF1", "CFF2", "E282", "FSU48", 
             "IMI58289", "KSU3368", "M567", "MRC2276", "NCIM1100"]
 
-# 1. Parse CD-HIT .clstr file
-clusters = {}
-current_cluster = None
+def parse_cdhit_clusters(filepath):
+    """Parses CD-HIT .clstr file to map isolates to clusters."""
+    clusters = {}
+    current_cluster = None
 
 with open(clstr_file, 'r') as f:
     for line in f:
