@@ -61,8 +61,16 @@ def get_deeptmhmm_passers(isolate):
     for file_path in files:
         with open(file_path, 'r') as f:
             for line in f:
-                if line.startswith(">") and ("GLOB" in line or "SP" in line):
-                    passers.add(get_standardized_id(line, isolate))
+                if line.startswith(">"):
+                    header = line.strip()
+                    
+                    # Extract topology after "|"
+                    if "|" in header:
+                        topology = header.split("|")[-1].strip()
+                        
+                        # Strict filter: allow ONLY SP or GLOB
+                        if topology in {"SP", "GLOB"}:
+                            passers.add(get_standardized_id(header, isolate))
     return passers
 
 # --- MAIN EXECUTION ---
