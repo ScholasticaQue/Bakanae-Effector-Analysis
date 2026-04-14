@@ -9,6 +9,13 @@ Fusarium fujikuroi is a major seed-borne pathogen causing Bakanae disease in ric
 - Pathogen risk assessment
 - Biosecurity in rice production systems
 
+## Objectives
+- Identify high-confidence effector candidates using a consensus secretome pipeline
+- Characterize lineage-specific vs core effectors
+- Quantify evolutionary pressure using dN/dS (PAML CodeML)
+- Perform structural and functional annotation
+- Prioritize high-risk virulence candidates for surveillance
+
 ## Computational Pipeline
 A multi-stage bioinformatics pipeline was developed and implemented to identify high-confidence effectors.
 
