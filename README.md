@@ -1,5 +1,13 @@
 # Bakanae-Effector-Analysis
-A comparative genomics and phylogeographic pipeline for rice bakanae disease. Features secretome filtering (SignalP/TargetP/EffectorP), PHI-base virulence prioritization, and OrthoFinder-based pangenome clustering coupled with BEAST2 diffusion analysis to model global pathogen spread, by analysing 13 isolates from 10 countries, including the Ivory Coast, India, and Japan.
+This project presents an integrated genomic and evolutionary framework for identifying, characterizing, and prioritizing high-risk effector genes in Fusarium fujikuroi across 114 global isolates.
+
+By combining secretome prediction, effector filtering, orthogroup analysis, and molecular evolution (dN/dS), this work reveals lineage-specific adaptation and uncovers candidate virulence factors driving pathogen evolution.
+## Background
+Fusarium fujikuroi is a major seed-borne pathogen causing Bakanae disease in rice. Understanding its effector repertoire is critical for:
+
+- Seed health surveillance
+- Pathogen risk assessment
+- Biosecurity in rice production systems
 
 ## Computational Pipeline
 A multi-stage bioinformatics pipeline was developed and implemented to identify high-confidence effectors.
