@@ -26,6 +26,7 @@ A multi-stage bioinformatics pipeline was developed and implemented to identify 
 **3. Evolutionary Analysis:** OrthoFinder → orthogroups, MAFFT → alignment, PAL2NAL → codon alignment, PAML (CodeML) → dN/dS
 
 **4. Structural & Functional Annotation:** AlphaFold → structure prediction, Foldseek → structural similarity, PHI-base → virulence annotation.
+
 **5. Genomic Context Analysis:** EDTA → transposable elements, Bedtools → TE proximity, Statistical testing: Mann-Whitney U, Fisher’s Exact Test
 
 ## Evolutionary & Phylogeographic Diffusion Modeling
