@@ -23,9 +23,9 @@ A multi-stage bioinformatics pipeline was developed and implemented to identify 
 
 **2. Effector Identification:** Using EffectorP 3.0 and physical property filters (>=4 cysteines, length 50-300aa)
 
-**3. Functional Annotation:** Cross-referencing against PHI-base and PFAM databases.
+**3. Evolutionary Analysis:** OrthoFinder → orthogroups, MAFFT → alignment, PAL2NAL → codon alignment, PAML (CodeML) → dN/dS
 
-**4. Comparative Genomics:** Clustered presence/absence analysis across 13 global isolates.
+**4. Structural & Functional Annotation:** AlphaFold → structure prediction, Foldseek → structural similarity, PHI-base → virulence annotatio
 
 ## Evolutionary & Phylogeographic Diffusion Modeling
 
