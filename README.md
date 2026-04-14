@@ -1,5 +1,5 @@
 # Bakanae-Effector-Analysis
-This project presents an integrated genomic and evolutionary framework for identifying, characterizing, and prioritizing high-risk effector genes in Fusarium fujikuroi across 114 global isolates.
+This project presents an integrated genomic and evolutionary framework for identifying, characterizing, and prioritizing high-risk effector genes in Fusarium fujikuroi across 14 global isolates.
 
 By combining secretome prediction, effector filtering, orthogroup analysis, and molecular evolution (dN/dS), this work reveals lineage-specific adaptation and uncovers candidate virulence factors driving pathogen evolution.
 ## Background
