@@ -52,9 +52,38 @@ Suggests:
 No universal infection strategy — highly adaptive pathogen
 
 ### 3. Strong Positive Selection
-24 orthogroups under selection
+- 24 orthogroups under selection
 
-Some with **ω ≈ 999 (extreme evolution)**
+- Some with **ω ≈ 999 (extreme evolution)**
+
+### 4. Structural Virulence Factors Identified
+
+Examples:
+
+- Necrosis-inducing proteins (NLPs)
+
+- Ecp2 effector
+
+- Pectinesterases
+
+- LPMOs
+
+### 5. High Novelty
+
+- 62.5% of high-risk candidates = no PHI-base match
+
+Indicates:
+
+Potential novel virulence mechanisms
+
+### 6. No Genome Compartmentalization
+- No TE proximity bias
+
+- No gene sparsity differences
+
+Evolution occurs:
+
+Across the whole genome, not just hotspots
 
 ### 🇰🇪 The Kenyan Effector Expansion
 
