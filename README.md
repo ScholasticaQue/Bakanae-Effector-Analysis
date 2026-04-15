@@ -48,10 +48,12 @@ Indicates lineage-specific pathogenic expansion
 - 0 core effectors across all isolates
 
 Suggests:
+
 No universal infection strategy — highly adaptive pathogen
 
 ### 3. Strong Positive Selection
 24 orthogroups under selection
+
 Some with **ω ≈ 999 (extreme evolution)**
 
 ### 🇰🇪 The Kenyan Effector Expansion
