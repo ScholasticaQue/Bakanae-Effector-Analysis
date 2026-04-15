@@ -83,7 +83,7 @@ Potential novel virulence mechanisms
 
 Evolution occurs:
 
-Across the whole genome, not just hotspots
+Across the whole genome, not just hotspots.
 
 
 ## Repository Structure
