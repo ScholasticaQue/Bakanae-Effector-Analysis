@@ -39,6 +39,7 @@ This repository highlights the unique evolutionary and pathogenic adaptation str
 
 #### 1. Effector Expansion in Specific Lineages
 5B, 5C, Baka → **~250 effectors each**
+
 Other isolates → **5–10 effectors**
 
 Indicates lineage-specific pathogenic expansion
@@ -48,6 +49,10 @@ Indicates lineage-specific pathogenic expansion
 
 Suggests:
 No universal infection strategy — highly adaptive pathogen
+
+### 3. Strong Positive Selection
+24 orthogroups under selection
+Some with **ω ≈ 999 (extreme evolution)**
 
 ### 🇰🇪 The Kenyan Effector Expansion
 
