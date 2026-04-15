@@ -43,6 +43,12 @@ Other isolates → 5–10 effectors
 
 Indicates lineage-specific pathogenic expansion
 
+### 2. No Core Effector Repertoire
+0 core effectors across all isolates
+
+Suggests:
+No universal infection strategy — highly adaptive pathogen
+
 ### 🇰🇪 The Kenyan Effector Expansion
 
 #### Isolate Redundancy
