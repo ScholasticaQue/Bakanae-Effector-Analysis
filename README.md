@@ -38,13 +38,13 @@ This repository highlights the unique evolutionary and pathogenic adaptation str
 ---
 
 #### 1. Effector Expansion in Specific Lineages
-5B, 5C, Baka → ~250 effectors each
-Other isolates → 5–10 effectors
+5B, 5C, Baka → **~250 effectors each**
+Other isolates → **5–10 effectors**
 
 Indicates lineage-specific pathogenic expansion
 
 ### 2. No Core Effector Repertoire
-0 core effectors across all isolates
+- 0 core effectors across all isolates
 
 Suggests:
 No universal infection strategy — highly adaptive pathogen
